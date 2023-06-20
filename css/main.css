@@ -1,0 +1,107 @@
+* {
+    font-family: 'Segoe UI';
+}
+
+:root {
+    --accolor: rgb(140, 86, 51); /* Accent Color */
+    --adcolor: rgb(130, 70, 30); /* Dark Accent Color */
+    --abcolor: rgb(143, 89, 53); /* Bright Accent Color */
+    --cbcolor: rgb(232, 17, 35); /*Close Button Color */
+    --bgcolor: rgb(240, 240, 240); /* Background Color */
+    --tbcolor: rgb(240, 240, 240); /* Top Bar Color */
+    --fgcolor: rgb(0, 0, 0); /* Foreground Color */
+    --hvcolor: rgb(0, 120, 215); /* Hover Color */
+    --hlcolor: rgb(53, 127, 222); /* Hyperlink Color */
+    --hgcolor: rgb(255, 255, 255); /* Hover Foreground Color */
+    --vccolor: rgb(255, 255, 255); /* Vgui Content Color */
+}
+
+.vguihcontent {
+    width: 100%;
+    font-weight: 450;
+    font-family: 'Segoe UI';
+    color: var(--vccolor);
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vguibox {
+    display: block;
+    border: 1px solid var(--accolor);
+    background-color: var(--bgcolor);
+    color: var(--fgcolor);
+    filter: drop-shadow(0px 0px 21px rgb(200, 200, 200));
+}
+
+.vguiheader {
+    width: auto;
+    height: 30px;
+    background-color: var(--adcolor);
+    display: flex;
+}
+
+.vguilogos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 45px;
+    height: 29px;
+    transition: background-color 0.2s;
+}
+
+.logo:hover {
+    background-color: var(--abcolor);
+}
+
+.logo.close:hover {
+    background-color: var(--cbcolor);
+}
+
+.min {
+    background-image: url("../assets/min.png");
+}
+
+.res {
+    background-image: url("../assets/res.png");
+}
+
+.close {
+    background-image: url("../assets/close.png");
+}
+.vguibox > .vguicontent > *:hover {
+    background-color: var(--hvcolor);
+    color: var(--hgcolor);
+}
+
+.vguicontent hr {
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top-color: rgb(160, 160, 160);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.vguicontent a {
+    color: var(--hlcolor);
+}
+
+.vix {
+    width: 100%;
+    text-align: center;
+}
+
+.vcon {
+    width: 80%;
+    font-size: 11.5px;
+    font-weight: 450;
+    white-space: pre-line;
+}
